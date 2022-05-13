@@ -9,7 +9,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CoastalSongChoiceApp.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20220513001324_CreateSong")]
+    [Migration("20220513014858_CreateSong")]
     partial class CreateSong
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -1,23 +1,23 @@
-createdb Songs
-pgcli Songs
+-- createdb Songs
+-- pgcli Songs
 
 
-CREATE TABLE "Songs" (
-  "Title"          TEXT NOT NULL,
-  "Artist"  TEXT,
-  "Id"             SERIAL PRIMARY KEY
-);
-CREATE TABLE "SongsList" (
+-- CREATE TABLE "Songs" (
+--   "Title"          TEXT NOT NULL,
+--   "Artist"  TEXT,
+--   "Id"             SERIAL PRIMARY KEY
+-- );
+-- CREATE TABLE "SongsList" (
   
-  "SongId"  INT,
-  "Id"             SERIAL PRIMARY KEY
-);
-CREATE TABLE "Users" (
-  "Name"          TEXT NOT NULL,
-  "Email"  TEXT,
-  "Id"             SERIAL PRIMARY KEY,
-  "SongsListId" INT
-);
+--   "SongId"  INT,
+--   "Id"             SERIAL PRIMARY KEY
+-- );
+-- CREATE TABLE "Users" (
+--   "Name"          TEXT NOT NULL,
+--   "Email"  TEXT,
+--   "Id"             SERIAL PRIMARY KEY,
+--   "SongsListId" INT
+-- );
 
 TRUNCATE TABLE "Songs" RESTART IDENTITY;
 
