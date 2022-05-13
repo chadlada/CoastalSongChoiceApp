@@ -1,15 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Great+Vibes&family=Pacifico&family=Satisfy&family=Shadows+Into+Light&family=Special+Elite&family=Zen+Loop&display=swap');
+
+// font-family: 'Amatic SC', cursive;
+
+// font-family: 'Great Vibes', cursive;
+
+// font-family: 'Pacifico', cursive;
+
+// font-family: 'Satisfy', cursive;
+
+// font-family: 'Shadows Into Light', cursive;
+
+// font-family: 'Special Elite', cursive;
+
+// font-family: 'Zen Loop', cursive;
+
 :root {
   font: 16px / 1 sans-serif;
-
-  // SDG brand colors
-  --asphalt: #2f3737;
-  --bright-sky: #80ced2;
-  --lime: #b1d133;
-  --night-sky: #85577e;
-  --sand: #f7f0da;
-  --sea: #5a9090;
-  --sun: #d5562b;
-  --tangerine: #f99d1b;
 }
 
 html {
@@ -19,4 +25,148 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-image: url('./images/coastalbackgroundimage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  // width: 200px;
+  height: 100vh;
+}
+
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  opacity: 0.8;
+}
+
+.checkheader {
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+  padding-left: 5rem;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Special Elite', cursive;
+  box-shadow: 0 10px 8px #0003;
+  width: 22%;
+  height: 45rem;
+  background-color: #d5562be0;
+  overflow: scroll;
+  margin-left: 1rem;
+  border: solid;
+  border-radius: 10px;
+}
+
+p {
+  // text-align: center;
+  color: #000000e0;
+  background-color: white;
+  width: 50rem;
+  margin-left: 17rem;
+  padding-left: 11rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  opacity: 0.7;
+  border-radius: 10px;
+  border: solid 3px rgb(72, 68, 68);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  opacity: 0.7;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+}
+
+label {
+  line-height: 1.5rem;
+  // background-color: #d5562be0;
+  padding-left: 14px;
+  margin-top: 1rem;
+}
+
+label span.checkheader {
+  font-size: 2rem;
+}
+
+span {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+  background-color: rgb(38, 32, 32);
+  border-radius: 10px;
+  color: #d5562be0;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-left: 6rem;
+}
+
+@media all and (max-width: 494px) {
+  h1 {
+    font-size: 16px;
+  }
+  .checkbox {
+    width: 50%;
+    font-size: 12px;
+    width: 13rem;
+    height: 34rem;
+    overflow: scroll;
+    padding-left: 8px;
+  }
+
+  span {
+    font-size: 12px;
+  }
+
+  label span.checkheader {
+    font-size: 18px;
+    padding-left: 4.8rem;
+  }
+
+  button {
+    background-color: rgb(38, 32, 32);
+    border-radius: 10px;
+    color: #d5562be0;
+    padding: 6px;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-left: 5.7rem;
+  }
+
+  label {
+    line-height: 1.5rem;
+    // background-color: #d5562be0;
+    padding-left: 2px;
+    margin-top: 0rem;
+  }
+
+  p {
+    // display: flex;
+    color: #000000e0;
+    background-color: white;
+    width: 22rem;
+    margin-left: 0rem;
+    padding-left: 1.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    opacity: 0.7;
+    font-size: 12px;
+  }
+  body {
+    margin: 0;
+    min-height: 100%;
+    background-image: url('./images/coastaljtree.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    // width: 200px;
+    height: 100vh;
+  }
 }
