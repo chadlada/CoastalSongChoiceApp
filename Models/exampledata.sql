@@ -7,11 +7,14 @@
 --   "Artist"  TEXT,
 --   "Id"             SERIAL PRIMARY KEY
 -- );
+
 -- CREATE TABLE "SongsList" (
   
 --   "SongId"  INT,
+--   "UserId"  INT,
 --   "Id"             SERIAL PRIMARY KEY
 -- );
+
 -- CREATE TABLE "Users" (
 --   "Name"          TEXT NOT NULL,
 --   "Email"  TEXT,
