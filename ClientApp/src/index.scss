@@ -34,9 +34,14 @@ body {
 
 header {
   background-color: white;
-  position: sticky;
+  // position: sticky;
   top: 0;
   opacity: 0.8;
+}
+
+.par-button {
+  display: flex;
+  flex-direction: row;
 }
 
 .checkheader {
@@ -51,21 +56,22 @@ header {
   font-family: 'Special Elite', cursive;
   box-shadow: 0 10px 8px #0003;
   width: 22%;
-  height: 45rem;
+  height: 39rem;
   background-color: #d5562be0;
   overflow: scroll;
   margin-left: 1rem;
   border: solid;
   border-radius: 10px;
+  margin-top: -19px;
 }
 
 p {
   // text-align: center;
   color: #000000e0;
   background-color: white;
-  width: 50rem;
-  margin-left: 17rem;
-  padding-left: 11rem;
+  width: 34rem;
+  margin-left: 12rem;
+  padding-left: 5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   opacity: 0.7;
@@ -106,6 +112,28 @@ button {
   text-decoration: none;
   text-transform: capitalize;
   margin-left: 6rem;
+  height: 4rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+  opacity: 0.7;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  // padding-top: 10px;
+}
+
+.link {
+  padding-left: 30rem;
+}
+
+.git {
+  padding-right: 30rem;
 }
 
 @media all and (max-width: 494px) {

@@ -1,4 +1,7 @@
 import React from 'react'
+import { SongsLanding } from './pages/SongsLanding'
+import git from './images/GitHub-Mark.png'
+import linkedin from './images/linkedin.png'
 
 export function App() {
   return (
@@ -6,110 +9,22 @@ export function App() {
       <header>
         <h1>Coastal Collective Song List</h1>
       </header>
-      <p>Check off the songs you would like to request then click submit!</p>
-      <button>Submit</button>
-      <br />
-      <br />
-      <div className="checkbox">
-        <label>
-          <span className="checkheader"> Songs </span>
-          <br />
-          <br />
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          1,000 Years <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Christina Perri</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Could you be loved <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Bob Marley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-        <label className="l1">
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Cant Help Falling In Love <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
-      </div>
+      <SongsLanding></SongsLanding>
+      <footer>
+        <div className="footer">
+          <span className="link">
+            <a href="https://www.linkedin.com/in/chad-lada-a01036105/">
+              <img src={linkedin} alt="linkedin" width="50" height="50" />
+            </a>
+          </span>
+          <h2>Created by Chad Lada</h2>
+          <span className="git">
+            <a href="https://github.com/chadlada">
+              <img src={git} alt="github" width="50" height="50" />
+            </a>
+          </span>
+        </div>
+      </footer>
     </>
   )
 }
