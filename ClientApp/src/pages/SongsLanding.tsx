@@ -3,10 +3,12 @@ import React from 'react'
 export function SongsLanding() {
   return (
     <>
-      <div className="par-button">
+      <div className="submit-par">
         <button>Submit</button>
+
         <p>Check off the songs you would like to request then click submit!</p>
       </div>
+
       <br />
       <br />
       <div className="checkbox">

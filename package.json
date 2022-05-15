@@ -1,4 +1,7 @@
 {
   "name": "CoastalSongChoiceApp",
-  "private": "true"
+  "private": "true",
+  "dependencies": {
+    "react-query": "^3.39.0"
+  }
 }
