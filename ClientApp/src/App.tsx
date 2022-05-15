@@ -1,7 +1,7 @@
 import React from 'react'
 import { SongsLanding } from './pages/SongsLanding'
-import { SongsList } from './pages/SongsList'
-import { Users } from './pages/Users'
+// import { SongsList } from './pages/SongsList'
+// import { Users } from './pages/Users'
 import git from './images/GitHub-Mark.png'
 import linkedin from './images/linkedin.png'
 

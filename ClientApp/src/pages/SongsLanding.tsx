@@ -1,6 +1,14 @@
 import React from 'react'
+import { useQuery } from 'react-query'
+import { SongType } from '../types'
 
 export function SongsLanding() {
+  const { data: songs = [] } = useQuery<SongType[]>('songs', async function () {
+    const response = await fetch('/api/songs')
+    // await not needed since using react query
+    return response.json()
+  })
+
   return (
     <>
       <div className="submit-par">
@@ -12,7 +20,19 @@ export function SongsLanding() {
       <br />
       <br />
       <div className="checkbox">
-        <label>
+        <span className="checkheader"> Songs </span>
+        {songs.map(function (song) {
+          return (
+            <label key={song.id}>
+              <br />
+              <br />
+              <input type="checkbox" />
+              {song.title} <br />
+              &nbsp;&nbsp;&nbsp;&nbsp; <span>-{song.artist}</span>
+            </label>
+          )
+        })}
+        {/* <label>
           <span className="checkheader"> Songs </span>
           <br />
           <br />
@@ -109,7 +129,7 @@ export function SongsLanding() {
           <input type="checkbox" />
           Cant Help Falling In Love <br />
           &nbsp;&nbsp;&nbsp;&nbsp; <span>-Elvis Presley</span>
-        </label>
+        </label> */}
       </div>
     </>
   )
