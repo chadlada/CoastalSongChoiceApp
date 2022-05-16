@@ -17,6 +17,9 @@ export function SongsLanding() {
 
         <p>Check off the songs you would like to request then click submit!</p>
       </div>
+      <form className="search">
+        <input type="text" placeholder="Search..." />
+      </form>
 
       <br />
       <br />

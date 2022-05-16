@@ -44,6 +44,10 @@ header {
   flex-direction: row;
 }
 
+.search {
+  margin-left: 5rem;
+}
+
 .checkheader {
   font-family: 'Satisfy', cursive;
   text-align: center;
@@ -66,12 +70,11 @@ header {
 }
 
 p {
-  // text-align: center;
   color: #000000e0;
   background-color: white;
   width: 31rem;
   margin-left: 12rem;
-  margin-left: 16rem;
+  margin-left: 14rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 3rem;
@@ -117,7 +120,7 @@ button {
   position: relative;
   text-decoration: none;
   text-transform: capitalize;
-  margin-left: 6rem;
+  margin-left: 8rem;
   height: 3rem;
 }
 
