@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useQuery } from 'react-query'
 import { SongType } from '../types'
 import { SingleSongFromList } from '../components/SingleSongFromList'
 
 export function SongsLanding() {
-  const { data: songs = [] } = useQuery<SongType[]>('songs', async function () {
-    const response = await fetch('/api/songs')
-    // await not needed since using react query
-    return response.json()
-  })
+  const [filterText, setFilterText] = useState('')
+
+  const { data: songs = [] } = useQuery<SongType[]>(
+    ['songs', filterText],
+    async function () {
+      const url =
+        filterText.length === 0
+          ? '/api/songs'
+          : '/api/songs?filter=${filterText}'
+      const response = await fetch(url)
+      // await not needed since using react query
+      return response.json()
+    }
+  )
 
   return (
     <>
@@ -18,7 +27,14 @@ export function SongsLanding() {
         <p>Check off the songs you would like to request then click submit!</p>
       </div>
       <form className="search">
-        <input type="text" placeholder="Search..." />
+        <input
+          type="text"
+          placeholder="Search..."
+          value={filterText}
+          onChange={function (event) {
+            setFilterText(event.target.value)
+          }}
+        />
       </form>
 
       <br />

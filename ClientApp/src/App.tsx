@@ -4,6 +4,7 @@ import { SongsLanding } from './pages/SongsLanding'
 // import { Users } from './pages/Users'
 import git from './images/GitHub-Mark.png'
 import linkedin from './images/linkedin.png'
+import { SongsList } from './pages/SongsList'
 
 export function App() {
   return (
@@ -11,7 +12,7 @@ export function App() {
       <header>
         <h1 className="header">Coastal Collective Song List</h1>
       </header>
-      <SongsLanding />
+      <SongsList />
       <footer>
         <div className="footer">
           <span className="link">

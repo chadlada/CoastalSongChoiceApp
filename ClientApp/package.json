@@ -17,6 +17,7 @@
     "useTabs": false
   },
   "dependencies": {
+    "bulma": "^0.9.4",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-query": "^3.39.0"
