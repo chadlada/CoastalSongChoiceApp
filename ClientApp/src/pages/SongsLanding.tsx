@@ -12,9 +12,10 @@ export function SongsLanding() {
       const url =
         filterText.length === 0
           ? '/api/songs'
-          : '/api/songs?filter=${filterText}'
+          : `/api/songs?filter=${filterText}`
       const response = await fetch(url)
       // await not needed since using react query
+      console.log(response.json)
       return response.json()
     }
   )

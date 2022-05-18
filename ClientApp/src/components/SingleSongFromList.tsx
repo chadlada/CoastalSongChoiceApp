@@ -1,7 +1,7 @@
 import React from 'react'
 import { SongType } from '../types'
 
-export function SingleSongFromList(props: SingleSongFromListType) {
+export function SingleSongFromList(props: SingleSongFromListProps) {
   return (
     <label>
       <input type="checkbox" />
@@ -10,6 +10,6 @@ export function SingleSongFromList(props: SingleSongFromListType) {
     </label>
   )
 }
-type SingleSongFromListType = {
+type SingleSongFromListProps = {
   song: SongType
 }

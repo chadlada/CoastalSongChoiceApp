@@ -50,9 +50,11 @@ header {
 
 .checkheader {
   font-family: 'Satisfy', cursive;
-  text-align: center;
+  // text-align: center;
   font-size: 2rem;
   padding-top: 1rem;
+  padding-left: 9rem;
+  border-bottom: solid 1.5px;
 }
 
 .checkbox {
@@ -128,22 +130,19 @@ button {
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  // justify-content: space-between;
   background-color: white;
   font-family: 'Satisfy', cursive;
   text-align: center;
   opacity: 0.7;
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 37rem;
   // padding-top: 10px;
 }
 
-.link {
-  padding-left: 30rem;
-}
-
-.git {
-  padding-right: 30rem;
+h2 {
+  align-content: center;
 }
 
 .users {
@@ -172,7 +171,7 @@ button {
 .songslistp {
   text-align: center;
   padding-right: 3rem;
-  margin-left: 26rem;
+  margin-left: 24rem;
   width: 35rem;
   height: 4rem;
   padding-top: 1rem;
@@ -182,7 +181,9 @@ button {
 .textarea {
   width: 479px;
   height: 98px;
-  margin-left: 5rem;
+  margin-left: 1rem;
+  margin-top: -1.5rem;
+  margin-bottom: -0.75rem;
 }
 
 .newsongslist {
@@ -190,11 +191,79 @@ button {
   background-color: #d5562be0;
   opacity: 0.9;
   height: 10rem;
-  margin-left: 30rem;
+  margin-left: 26rem;
+  width: 38rem;
 }
 
 div.songslistform input {
-  margin-left: 4rem;
+  margin-left: 0rem;
+}
+
+.checkboxsongslist {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Special Elite', cursive;
+  box-shadow: 0 10px 8px #0003;
+  width: 22%;
+  height: 39rem;
+  background-color: #d5562be0;
+  overflow: scroll;
+  margin-left: 1rem;
+  border: solid;
+  border-radius: 10px;
+  margin-top: -19px;
+}
+
+div.checkboxsongslist {
+  margin-left: 35rem;
+  margin-top: 1rem;
+  text-align: left;
+  width: 23rem;
+  height: 28rem;
+}
+
+.submitsongslist {
+  background-color: #262020;
+  border-radius: 10px;
+  color: #d5562be0;
+  height: 3rem;
+  width: 6rem;
+}
+
+.pandcheckbox {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.deletesongsp {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 19.5rem;
+  padding-top: 8rem;
+}
+.deletesongsp input {
+  // background-color: red;
+}
+
+.pandcheckbox p {
+  margin-left: 24rem;
+  margin-right: -34rem;
+  width: 15rem;
+  height: 19.5rem;
+  opacity: 0.9;
+}
+
+input.deletesongslist {
+  padding-bottom: 0rem;
+  margin-top: 1rem;
+  margin-left: 0rem;
+  background-color: #262020;
+  border-radius: 10px;
+  color: #d5562be0;
+  height: 3rem;
+  width: 6rem;
+  // opacity: 1;
 }
 
 @media all and (max-width: 494px) {
@@ -208,6 +277,19 @@ div.songslistform input {
     height: 34rem;
     overflow: scroll;
     padding-left: 8px;
+  }
+
+  div.checkboxsongslist {
+    margin-left: 4px;
+    margin-top: 1rem;
+    text-align: left;
+    width: 23rem;
+    height: 28rem;
+    // background-color: red;
+  }
+
+  input {
+    margin-left: 0rem;
   }
 
   span {
@@ -287,5 +369,21 @@ div.songslistform input {
 
   h2 {
     font-size: 15px;
+  }
+
+  .songslistp {
+    text-align: center;
+    padding-right: 3rem;
+    margin-left: 14px;
+    width: 17rem;
+    height: 4rem;
+    padding-top: 1rem;
+    opacity: 0.9;
+  }
+
+  .textarea {
+    width: 20rem;
+    height: 98px;
+    margin-left: 0rem;
   }
 }
