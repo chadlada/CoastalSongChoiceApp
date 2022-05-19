@@ -45,7 +45,7 @@ namespace CoastalSongChoiceApp.Controllers
                 return await _context.Songs
                 .OrderBy(row => row.Id)
                 .Where(song => song.Title.ToLower()
-                .Contains(filter.ToLower())).ToListAsync();
+                .Contains(filter.ToLower()) || song.Artist.ToLower().Contains(filter.ToLower())).ToListAsync();
             }
         }
 

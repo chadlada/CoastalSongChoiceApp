@@ -37,6 +37,18 @@ header {
   // position: sticky;b
   top: 0;
   opacity: 0.8;
+  display: flex;
+  border-bottom: solid 2px;
+  height: 4rem;
+}
+
+h3 {
+  margin-left: 3rem;
+}
+
+.headerlinks {
+  display: flex;
+  flex-direction: column;
 }
 
 .par-button {
@@ -45,7 +57,7 @@ header {
 }
 
 .search {
-  margin-left: 5rem;
+  margin-left: 6rem;
 }
 
 .checkheader {
@@ -53,7 +65,7 @@ header {
   // text-align: center;
   font-size: 2rem;
   padding-top: 1rem;
-  padding-left: 9rem;
+  padding-left: 7rem;
   border-bottom: solid 1.5px;
 }
 
@@ -98,6 +110,7 @@ p {
   padding-bottom: 15px;
   background-color: white;
   margin-top: 0px;
+  padding-left: 20rem;
 }
 
 label {
@@ -125,6 +138,7 @@ button {
   text-transform: capitalize;
   margin-left: 8rem;
   height: 3rem;
+  margin-top: 0.5rem;
 }
 
 .footer {
@@ -233,7 +247,7 @@ div.checkboxsongslist {
 .pandcheckbox {
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
+  margin-top: -1rem;
 }
 
 .deletesongsp {
@@ -241,9 +255,6 @@ div.checkboxsongslist {
   padding-right: 1rem;
   height: 19.5rem;
   padding-top: 8rem;
-}
-.deletesongsp input {
-  // background-color: red;
 }
 
 .pandcheckbox p {
@@ -254,38 +265,61 @@ div.checkboxsongslist {
   opacity: 0.9;
 }
 
-input.deletesongslist {
-  padding-bottom: 0rem;
-  margin-top: 1rem;
-  margin-left: 0rem;
-  background-color: #262020;
-  border-radius: 10px;
-  color: #d5562be0;
-  height: 3rem;
-  width: 6rem;
-  // opacity: 1;
-}
-
 @media all and (max-width: 494px) {
+  a h3 {
+    padding-top: 0px;
+    margin-left: 8px;
+    margin-bottom: 6px;
+  }
+
+  div.headerlinks a {
+    margin-top: 0rem;
+    margin-bottom: -1rem;
+    margin-top: 0rem;
+    margin-bottom: -1rem;
+  }
+  .search {
+    margin-left: 6rem;
+  }
+  h3 {
+    font-size: 12px;
+    padding-top: 8px;
+  }
+  .header {
+    padding-left: 2rem;
+  }
+
+  // .headerlinks a h3 {
+  //   padding-top: 0px;
+  // }
   h1 {
     font-size: 16px;
   }
   .checkbox {
-    width: 50%;
-    font-size: 12px;
-    width: 13rem;
+    font-size: 16px;
+    width: 17rem;
     height: 34rem;
     overflow: scroll;
     padding-left: 8px;
+    margin-left: 3rem;
+  }
+
+  .checkheader {
+    padding-bottom: 0.5rem;
+    width: 12rem;
+    margin-left: -1rem;
   }
 
   div.checkboxsongslist {
-    margin-left: 4px;
+    margin-left: 2rem;
     margin-top: 1rem;
     text-align: left;
-    width: 23rem;
+    width: 28rem;
     height: 28rem;
-    // background-color: red;
+    margin-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
   }
 
   input {
@@ -353,6 +387,7 @@ input.deletesongslist {
 
   .footer {
     margin-top: 1rem;
+    padding-left: 3rem;
   }
 
   .linkimage {

@@ -11,7 +11,7 @@ export function SongsLanding() {
     async function () {
       const url =
         filterText.length === 0
-          ? '/api/songs'
+          ? `/api/songs`
           : `/api/songs?filter=${filterText}`
       const response = await fetch(url)
       // await not needed since using react query
@@ -25,7 +25,7 @@ export function SongsLanding() {
       <div className="submit-par">
         <button>Submit</button>
 
-        <p>Check off the songs you would like to request then click submit!</p>
+        <p>Check the songs you would like to request then click submit!</p>
       </div>
       <form className="search">
         <input
