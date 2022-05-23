@@ -42,8 +42,20 @@ header {
   height: 4rem;
 }
 
+div.headerlinks a h3.h3songslist {
+  margin-top: -1rem;
+}
+
+div.headerlinks a {
+  margin-top: -3px;
+}
+
 h3 {
   margin-left: 3rem;
+}
+
+.h3songslist {
+  margin-top: 0rem;
 }
 
 .headerlinks {
@@ -78,7 +90,7 @@ h3 {
   height: 39rem;
   background-color: #d5562be0;
   overflow: scroll;
-  margin-left: 1rem;
+  margin-left: 3rem;
   border: solid;
   border-radius: 10px;
   margin-top: -19px;
@@ -110,11 +122,11 @@ p {
   padding-bottom: 15px;
   background-color: white;
   margin-top: 0px;
-  padding-left: 20rem;
+  padding-left: 25rem;
 }
 
 label {
-  line-height: 1.5rem;
+  line-height: 1rem;
   // background-color: #d5562be0;
   padding-left: 14px;
   margin-top: 1rem;
@@ -270,6 +282,10 @@ div.checkboxsongslist {
     padding-top: 0px;
     margin-left: 8px;
     margin-bottom: 6px;
+  }
+
+  .headerlinks {
+    margin-top: 1rem;
   }
 
   div.headerlinks a {

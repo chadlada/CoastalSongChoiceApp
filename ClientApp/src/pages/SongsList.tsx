@@ -1,6 +1,7 @@
 import React from 'react'
 import { useQuery } from 'react-query'
 import { SingleSongFromList } from '../components/SingleSongFromList'
+import { SingleSongFromListUser } from '../components/SingleSongUser'
 import { SongType } from '../types'
 
 export function SongsList() {
@@ -19,10 +20,10 @@ export function SongsList() {
 
           {songs.map(function (song) {
             return (
-              <SingleSongFromList
+              <SingleSongFromListUser
                 key={song.id}
                 song={song}
-              ></SingleSongFromList>
+              ></SingleSongFromListUser>
             )
           })}
         </div>

@@ -17,7 +17,7 @@ export function App() {
             <h3>Home</h3>
           </Link>
           <Link to="SongsList">
-            <h3>SongsList</h3>
+            <h3 className="h3songslist">SongsList</h3>
           </Link>
         </div>
 
