@@ -15,6 +15,7 @@ namespace CoastalSongChoiceApp.Models
 
         // Add database tables here
         public DbSet<Song> Songs { get; set; }
+        public DbSet<SongList> SongsList { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

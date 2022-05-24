@@ -1,6 +1,5 @@
 import React from 'react'
 import { useQuery } from 'react-query'
-import { SingleSongFromList } from '../components/SingleSongFromList'
 import { SingleSongFromListUser } from '../components/SingleSongUser'
 import { SongType } from '../types'
 
