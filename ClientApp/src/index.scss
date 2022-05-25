@@ -42,6 +42,11 @@ header {
   height: 4rem;
 }
 
+.headerall {
+  display: flex;
+  margin-left: 1rem;
+}
+
 div.headerlinks a h3.h3songslist {
   margin-top: -1rem;
 }
@@ -63,6 +68,11 @@ h3 {
   flex-direction: column;
 }
 
+.pheader {
+  margin-left: 3rem;
+  width: 4rem;
+}
+
 .par-button {
   display: flex;
   flex-direction: row;
@@ -70,6 +80,16 @@ h3 {
 
 .search {
   margin-left: 6rem;
+}
+
+.midofpage {
+  margin-left: 34rem;
+  background-color: #d5562be0;
+  width: 23rem;
+  height: 14rem;
+  padding: 1rem;
+  border: solid;
+  border-radius: 2rem;
 }
 
 .checkheader {
@@ -93,15 +113,14 @@ h3 {
   margin-left: 3rem;
   border: solid;
   border-radius: 10px;
-  margin-top: -19px;
+  margin-top: 9rem;
 }
 
-p {
+.instructions-p {
   color: #000000e0;
   background-color: white;
   width: 31rem;
-  margin-left: 12rem;
-  margin-left: 14rem;
+  margin-left: 25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 3rem;
@@ -113,6 +132,9 @@ p {
 .submit-par {
   display: flex;
   margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  width: 22rem;
 }
 
 .header {
@@ -141,6 +163,12 @@ span {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.leftside {
+  display: flex;
+  flex-direction: column;
+  margin-top: -17rem;
+}
+
 button {
   background-color: rgb(38, 32, 32);
   border-radius: 10px;
@@ -149,7 +177,7 @@ button {
   position: relative;
   text-decoration: none;
   text-transform: capitalize;
-  margin-left: 8rem;
+  margin-left: 11rem;
   height: 3rem;
   margin-top: 0.5rem;
 }
@@ -177,6 +205,9 @@ h2 {
   text-align: center;
 }
 
+.mb-4 {
+  text-align: center;
+}
 .songslistheader {
   text-align: center;
   font-family: 'EB Garamond', serif;
@@ -278,6 +309,13 @@ div.checkboxsongslist {
   opacity: 0.9;
 }
 
+.h5 {
+  width: 22rem;
+  font-family: 'EB Garamond', serif;
+  font-size: 22px;
+  margin-top: 0rem;
+}
+
 @media all and (max-width: 494px) {
   a h3 {
     padding-top: 0px;
@@ -285,8 +323,32 @@ div.checkboxsongslist {
     margin-bottom: 6px;
   }
 
+  header {
+    background-color: white;
+    top: 0;
+    opacity: 0.8;
+    display: flex;
+    border-bottom: solid 2px;
+    height: 4rem;
+  }
+
   .headerlinks {
     margin-top: 1rem;
+  }
+
+  h5 {
+    padding-top: 0rem;
+  }
+
+  .leftside {
+    margin-top: -17rem;
+  }
+
+  .submit-par {
+    margin-top: 16rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0rem;
   }
 
   div.headerlinks a {
@@ -297,6 +359,24 @@ div.checkboxsongslist {
   }
   .search {
     margin-left: 6rem;
+    margin-top: 17rem;
+  }
+
+  .instructions-p {
+    margin-left: 11px;
+    padding-left: 1rem;
+    width: 21rem;
+    height: 5rem;
+  }
+
+  .midofpage {
+    margin-left: 0rem;
+    background-color: #d5562be0;
+    width: 23rem;
+    height: 14rem;
+    padding: 1rem;
+    border: solid;
+    border-radius: 2rem;
   }
   h3 {
     font-size: 12px;
@@ -319,6 +399,7 @@ div.checkboxsongslist {
     overflow: scroll;
     padding-left: 8px;
     margin-left: 3rem;
+    margin-top: 1rem;
   }
 
   .checkheader {
@@ -360,7 +441,8 @@ div.checkboxsongslist {
     position: relative;
     text-decoration: none;
     text-transform: capitalize;
-    margin-left: 1rem;
+    margin-left: 7rem;
+    width: 6rem;
   }
 
   label {

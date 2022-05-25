@@ -35,6 +35,42 @@ namespace CoastalSongChoiceApp.Migrations
 
                     b.ToTable("Songs");
                 });
+
+            modelBuilder.Entity("CoastalSongChoiceApp.Models.SongList", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<int>("SongId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SongId");
+
+                    b.ToTable("SongsList");
+                });
+
+            modelBuilder.Entity("CoastalSongChoiceApp.Models.SongList", b =>
+                {
+                    b.HasOne("CoastalSongChoiceApp.Models.Song", "Song")
+                        .WithMany("SongLists")
+                        .HasForeignKey("SongId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Song");
+                });
+
+            modelBuilder.Entity("CoastalSongChoiceApp.Models.Song", b =>
+                {
+                    b.Navigation("SongLists");
+                });
 #pragma warning restore 612, 618
         }
     }

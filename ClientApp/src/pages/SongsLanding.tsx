@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useQuery } from 'react-query'
 import { SongType } from '../types'
 import { SingleSongFromList } from '../components/SingleSongFromList'
+import FormPage from '../components/FormPage'
 
 export function SongsLanding() {
   const [filterText, setFilterText] = useState('')
@@ -22,32 +23,40 @@ export function SongsLanding() {
 
   return (
     <>
-      <div className="submit-par">
+      <br />
+      <br />
+
+      <p className="instructions-p">
+        Check the songs you would like to request then click submit!
         <button>Submit</button>
+      </p>
 
-        <p>Check the songs you would like to request then click submit!</p>
-      </div>
-      <form className="search">
-        <input
-          type="text"
-          placeholder="Search..."
-          value={filterText}
-          onChange={function (event) {
-            setFilterText(event.target.value)
-          }}
-        />
-      </form>
+      <div className="leftside">
+        <form className="search">
+          <input
+            type="text"
+            placeholder="Search..."
+            value={filterText}
+            onChange={function (event) {
+              setFilterText(event.target.value)
+            }}
+          />
+        </form>
 
-      <br />
-      <br />
-      <div className="checkbox">
-        <span className="checkheader"> Songs </span>
+        <br />
+        <br />
+        <div className="checkbox">
+          <span className="checkheader"> Songs </span>
 
-        {songs.map(function (song) {
-          return (
-            <SingleSongFromList key={song.id} song={song}></SingleSongFromList>
-          )
-        })}
+          {songs.map(function (song) {
+            return (
+              <SingleSongFromList
+                key={song.id}
+                song={song}
+              ></SingleSongFromList>
+            )
+          })}
+        </div>
       </div>
     </>
   )

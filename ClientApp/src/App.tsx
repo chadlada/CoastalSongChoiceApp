@@ -12,16 +12,25 @@ export function App() {
   return (
     <>
       <header>
-        <div className="headerlinks">
-          <Link to="/">
-            <h3>Home</h3>
-          </Link>
-          <Link to="SongsList">
-            <h3 className="h3songslist">SongsList</h3>
-          </Link>
+        <div className="headerall">
+          <div className="headerlinks">
+            <Link to="/">
+              <h3>Home</h3>
+            </Link>
+            <Link to="SongsList">
+              <h3 className="h3songslist">SongsList</h3>
+            </Link>
+          </div>
+          <h1 className="header">
+            Coastal Collective <br /> Song List
+          </h1>
+          <div className="headerflex">
+            <p className="pheader">
+              Login <br />
+              Sign-Up
+            </p>
+          </div>
         </div>
-
-        <h1 className="header">Coastal Collective Song List</h1>
       </header>
       <Routes>
         <Route path="/" element={<SongsLanding />} />

@@ -2,6 +2,8 @@
   "name": "CoastalSongChoiceApp",
   "private": "true",
   "dependencies": {
+    "mdb-react-ui-kit": "^3.0.0",
+    "mdbreact": "^4.6.1",
     "react-query": "^3.39.0"
   }
 }

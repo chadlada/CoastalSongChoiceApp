@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace CoastalSongChoiceApp.Models
 {
     public class SongList
@@ -5,5 +7,7 @@ namespace CoastalSongChoiceApp.Models
         public int Id { get; set; }
         public int UserId { get; set; }
         public int SongId { get; set; }
+        public Song Song { get; set; }
+        // public List<Song> Songs { get; set; }
     }
 }
