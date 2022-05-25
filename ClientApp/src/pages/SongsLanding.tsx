@@ -31,18 +31,17 @@ export function SongsLanding() {
         <button>Submit</button>
       </p>
 
+      <form className="search">
+        <input
+          type="text"
+          placeholder="Search..."
+          value={filterText}
+          onChange={function (event) {
+            setFilterText(event.target.value)
+          }}
+        />
+      </form>
       <div className="leftside">
-        <form className="search">
-          <input
-            type="text"
-            placeholder="Search..."
-            value={filterText}
-            onChange={function (event) {
-              setFilterText(event.target.value)
-            }}
-          />
-        </form>
-
         <br />
         <br />
         <div className="checkbox">

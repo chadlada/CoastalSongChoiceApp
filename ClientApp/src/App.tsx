@@ -7,6 +7,8 @@ import linkedin from './images/linkedin.png'
 import { SongsList } from './pages/SongsList'
 import { Route, Routes } from 'react-router'
 import { Link } from 'react-router-dom'
+import { Navbar } from './components/Navbar'
+import { SignUp } from './pages/SignUp'
 
 export function App() {
   return (
@@ -32,9 +34,12 @@ export function App() {
           </div>
         </div>
       </header>
+      <Navbar />
+
       <Routes>
         <Route path="/" element={<SongsLanding />} />
         <Route path="/SongsList" element={<SongsList />} />
+        <Route path="/SignUp" element={<SignUp />} />
       </Routes>
       <footer>
         <div className="footer">
