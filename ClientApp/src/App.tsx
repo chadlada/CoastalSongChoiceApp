@@ -9,36 +9,20 @@ import { Route, Routes } from 'react-router'
 import { Link } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
 import { SignUp } from './pages/SignUp'
+import { SignIn } from './pages/SignIn'
 
 export function App() {
   return (
     <>
       <header>
-        <div className="headerall">
-          <div className="headerlinks">
-            <Link to="/">
-              <h3>Home</h3>
-            </Link>
-            <Link to="SongsList">
-              <h3 className="h3songslist">SongsList</h3>
-            </Link>
-          </div>
-          <h1 className="header">
-            Coastal Collective <br /> Song List
-          </h1>
-          <div className="headerflex">
-            <p className="pheader">
-              Login <br />
-              Sign-Up
-            </p>
-          </div>
-        </div>
+        <h1 className="header">Coastal Collective</h1>
       </header>
       <Navbar />
 
       <Routes>
         <Route path="/" element={<SongsLanding />} />
         <Route path="/SongsList" element={<SongsList />} />
+        <Route path="/SignIn" element={<SignIn />} />
         <Route path="/SignUp" element={<SignUp />} />
       </Routes>
       <footer>

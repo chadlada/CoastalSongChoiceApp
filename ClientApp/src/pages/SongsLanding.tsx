@@ -41,21 +41,15 @@ export function SongsLanding() {
           }}
         />
       </form>
-      <div className="leftside">
-        <br />
-        <br />
-        <div className="checkbox">
-          <span className="checkheader"> Songs </span>
 
-          {songs.map(function (song) {
-            return (
-              <SingleSongFromList
-                key={song.id}
-                song={song}
-              ></SingleSongFromList>
-            )
-          })}
-        </div>
+      <div className="checkbox">
+        <span className="checkheader"> Songs </span>
+
+        {songs.map(function (song) {
+          return (
+            <SingleSongFromList key={song.id} song={song}></SingleSongFromList>
+          )
+        })}
       </div>
     </>
   )
