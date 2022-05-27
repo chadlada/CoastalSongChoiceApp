@@ -6,7 +6,6 @@ import git from './images/GitHub-Mark.png'
 import linkedin from './images/linkedin.png'
 import { SongsList } from './pages/SongsList'
 import { Route, Routes } from 'react-router'
-import { Link } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
 import { SignUp } from './pages/SignUp'
 import { SignIn } from './pages/SignIn'
@@ -15,7 +14,7 @@ export function App() {
   return (
     <>
       <header>
-        <h1 className="header">Coastal Collective</h1>
+        <h1>Coastal Collective</h1>
       </header>
       <Navbar />
 

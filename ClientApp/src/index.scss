@@ -1,11 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=EB+Garamond&family=Great+Vibes&family=Pacifico&family=Satisfy&family=Shadows+Into+Light&family=Special+Elite&family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Barlow+Semi+Condensed:wght@100&family=Bebas+Neue&family=EB+Garamond&family=Great+Vibes&family=Macondo&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Satisfy&family=Shadows+Into+Light&family=Special+Elite&family=Zen+Loop&display=swap');
 // font-family: 'Amatic SC', cursive;
+
+// font-family: 'Barlow Semi Condensed', sans-serif;
+
+// font-family: 'Bebas Neue', cursive;
 
 // font-family: 'EB Garamond', serif;
 
 // font-family: 'Great Vibes', cursive;
 
+// font-family: 'Macondo', cursive;
+
 // font-family: 'Pacifico', cursive;
+
+// font-family: 'Patrick Hand', cursive;
+
+// font-family: 'Permanent Marker', cursive;
 
 // font-family: 'Satisfy', cursive;
 
@@ -54,7 +64,8 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 22px;
+  font-family: 'Bebas Neue', cursive;
 }
 
 /* Change the color of links on hover */
@@ -81,11 +92,13 @@ header {
   height: 5rem;
   display: flex;
   justify-content: center;
+  font-family: 'Amatic SC', cursive;
 }
 
-// h3 {
-//   margin-left: 3rem;
-// }
+h1 {
+  font-size: 5rem;
+  margin-top: 0rem;
+}
 
 .h3songslist {
   margin-top: 0rem;
@@ -101,14 +114,23 @@ header {
   width: 4rem;
 }
 
+// .songlistpar {
+//   margin-left: 54px;
+// }
+
 .par-button {
   display: flex;
   flex-direction: row;
 }
 
+.submitsongs {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1rem;
+}
+
 .search {
-  margin-left: 6rem;
-  margin-top: -6rem;
+  margin-left: 0rem;
+  margin-top: 0rem;
 }
 
 .midofpage {
@@ -122,9 +144,9 @@ header {
 }
 
 .checkheader {
-  font-family: 'Satisfy', cursive;
+  font-family: 'Amatic SC', cursive;
   // text-align: center;
-  font-size: 20px;
+  font-size: 37px;
   padding-top: 1rem;
   padding-left: 7rem;
   border-bottom: solid 1.5px;
@@ -135,7 +157,7 @@ header {
   flex-direction: column;
   font-family: 'Special Elite', cursive;
   box-shadow: 0 10px 8px #0003;
-  width: 22%;
+  width: 24%;
   height: 32rem;
   background-color: #d5562be0;
   overflow: scroll;
@@ -146,10 +168,10 @@ header {
 }
 
 .instructions-p {
-  color: #aea4a4;
+  color: #ead9d9;
   background-color: #333;
   width: 31rem;
-  margin-left: 28rem;
+  // margin-left: 28rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 3rem;
@@ -158,6 +180,7 @@ header {
   border: solid 3px #484444;
   display: flex;
   flex-direction: column;
+  margin-left: 26rem;
 }
 
 .submit-par {
@@ -186,9 +209,13 @@ span {
 .leftside {
   display: flex;
   flex-direction: column;
-  margin-top: -17rem;
+  margin-top: 1rem;
 }
 
+.searchbar {
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
 button {
   background-color: rgb(38, 32, 32);
   border-radius: 10px;
@@ -197,10 +224,11 @@ button {
   position: relative;
   text-decoration: none;
   text-transform: capitalize;
-  margin-left: 11rem;
+  margin-left: 8rem;
   height: 3rem;
   margin-top: 0.5rem;
   width: 8rem;
+  margin-bottom: 1rem;
 }
 
 .footer {
@@ -257,9 +285,12 @@ h2 {
   padding-right: 3rem;
   margin-left: 24rem;
   width: 35rem;
-  height: 4rem;
+  height: 5rem;
   padding-top: 1rem;
   opacity: 0.9;
+  background-color: white;
+  border-radius: 1rem;
+  padding-left: 3rem;
 }
 
 .textarea {
@@ -340,7 +371,6 @@ div.checkboxsongslist {
 // SignUp Page
 
 .psignup {
-  background-color: red;
 }
 
 // --------------------------// --------------------------------------------------------------------------------------------------------
@@ -349,7 +379,11 @@ div.checkboxsongslist {
 .p-sign-in {
   color: red;
 }
-// --------------------------// --------------------------------------------------------------------------------------------------------
+
+.signup-form {
+  background-color: white;
+  opacity: 0.8;
+}
 
 // --------------------------// --------------------------------------------------------------------------------------------------------
 // @MEDIA (responsive)
@@ -371,8 +405,26 @@ div.checkboxsongslist {
     padding-top: 3px;
   }
 
+  .songslistheader {
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    background-color: white;
+    width: 17rem;
+    border-radius: 1rem;
+    height: 35px;
+    padding-top: 10px;
+    margin-left: 56px;
+    opacity: 0.8;
+  }
+
   .topnav a {
-    font-size: 12px;
+    float: left;
+    color: #d5562be0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Spline Sans Mono', monospace;
   }
 
   h5 {
@@ -397,16 +449,23 @@ div.checkboxsongslist {
     margin-bottom: -1rem;
   }
   .search {
-    margin-left: 6rem;
-    margin-top: 1rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    width: 13rem;
   }
 
   .instructions-p {
-    margin-left: 11px;
+    // margin-left: 11px;
     padding-left: 1rem;
     width: 21rem;
-    height: 72px;
+    // height: 72px;
     padding-top: 1rem;
+    margin-left: 0.5rem;
+    margin-top: -1rem;
+  }
+
+  .submitlink {
+    background-color: red;
   }
 
   .midofpage {
@@ -424,7 +483,7 @@ div.checkboxsongslist {
   }
 
   h1 {
-    font-size: 19px;
+    font-size: 37px;
     padding-bottom: 3rem;
   }
   .checkbox {
@@ -438,13 +497,15 @@ div.checkboxsongslist {
   }
 
   .checkheader {
-    padding-bottom: 0.5rem;
-    width: 12rem;
-    margin-left: -1rem;
+    font-size: 39px;
+    padding-top: 1rem;
+    padding-left: 7rem;
+    border-bottom: solid 1.5px;
+    font-family: 'Amatic SC', cursive;
   }
 
   div.checkboxsongslist {
-    margin-left: 2rem;
+    margin-left: 25px;
     margin-top: 1rem;
     text-align: left;
     width: 18rem;
@@ -476,8 +537,8 @@ div.checkboxsongslist {
     position: relative;
     text-decoration: none;
     text-transform: capitalize;
-    margin-left: 7rem;
     width: 6rem;
+    margin-top: 16.5rem;
   }
 
   label {
@@ -546,7 +607,7 @@ div.checkboxsongslist {
   .songslistp {
     text-align: center;
     padding-right: 3rem;
-    margin-left: 14px;
+    margin-left: 6px;
     width: 17rem;
     height: 4rem;
     padding-top: 1rem;
