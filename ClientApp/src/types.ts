@@ -3,3 +3,9 @@ export type SongType = {
   title: string
   artist: string
 }
+
+export type SongListType = {
+  id: number
+  userId: number
+  songId: number
+}

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useQuery } from 'react-query'
 import { SongType } from '../types'
 import { SingleSongFromList } from '../components/SingleSongFromList'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 export function SongsLanding() {
   const [filterText, setFilterText] = useState('')
@@ -21,15 +21,17 @@ export function SongsLanding() {
     }
   )
 
-  // function demo() {
-  //   document.querySelectorAll('input:checked').forEach(element => {
-  //     console.log(element.value);
-  //   });
-  // }
+  function inputChecked() {
+    document.querySelectorAll('input:checked').forEach((element) => {
+      console.log(element)
+    })
+  }
 
   async function _clickSubmit(event) {
     event.preventDefault()
-    console.log(event)
+    inputChecked()
+    location.href = '/SongsList'
+    console.log('Hey There')
     //  Code to POST new user songlist to API
   }
 
@@ -42,7 +44,9 @@ export function SongsLanding() {
         Check the songs you would like to request then click submit!
       </p>
 
-      <button className="submitsongs">Submit</button>
+      <button className="submitsongs" onClick={_clickSubmit}>
+        Submit
+      </button>
 
       <div className="checkbox">
         <span className="checkheader"> Songs </span>

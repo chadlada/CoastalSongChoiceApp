@@ -1,14 +1,17 @@
 import React from 'react'
 import { useQuery } from 'react-query'
 import { SingleSongFromListUser } from '../components/SingleSongUser'
-import { SongType } from '../types'
+import { SongListType, SongType } from '../types'
 
 export function SongsList() {
-  const { data: songs = [] } = useQuery<SongType[]>('songs', async function () {
-    const response = await fetch('/api/songs')
-    // await not needed since using react query
-    return response.json()
-  })
+  const { data: songs = [] } = useQuery<SongListType[]>(
+    'songs',
+    async function () {
+      const response = await fetch('/api/songlist')
+      // await not needed since using react query
+      return response.json()
+    }
+  )
   return (
     <>
       <h2 className="songslistheader">Here is your song list</h2>
