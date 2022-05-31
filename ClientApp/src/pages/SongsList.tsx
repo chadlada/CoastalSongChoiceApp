@@ -1,7 +1,8 @@
 import React from 'react'
 import { useQuery } from 'react-query'
+// import { SingleSongFromList } from '../components/SingleSongFromList'
 import { SingleSongFromListUser } from '../components/SingleSongUser'
-import { SongListType, SongType } from '../types'
+import { SongListType } from '../types'
 
 export function SongsList() {
   const { data: songs = [] } = useQuery<SongListType[]>(

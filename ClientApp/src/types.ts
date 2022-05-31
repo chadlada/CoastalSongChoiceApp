@@ -8,4 +8,6 @@ export type SongListType = {
   id: number
   userId: number
   songId: number
+  title: string
+  artist: string
 }
