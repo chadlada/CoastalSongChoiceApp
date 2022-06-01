@@ -9,8 +9,6 @@ namespace CoastalSongChoiceApp.Models
         public int SongId { get; set; }
         public Song Song { get; set; }
         public User User { get; set; }
-        
-        
-        // public List<Song> Songs { get; set; }
+        public List<Song> Songs { get; set; }
     }
 }

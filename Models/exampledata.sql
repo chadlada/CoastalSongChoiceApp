@@ -2,27 +2,27 @@
 -- pgcli Songs
 
 
--- CREATE TABLE "Songs" (
---   "Title"          TEXT NOT NULL,
---   "Artist"  TEXT,
---   "Id"             SERIAL PRIMARY KEY
--- );
+CREATE TABLE "Songs" (
+  "Title"          TEXT NOT NULL,
+  "Artist"  TEXT,
+  "Id"             SERIAL PRIMARY KEY
+);
 
--- CREATE TABLE "SongsList" (
+CREATE TABLE "SongsList" (
   
---   "SongId"  INT,
---   "UserId"  INT,
---   "Id"             SERIAL PRIMARY KEY
--- );
+  "SongId"  INT,
+  "UserId"  INT,
+  "Id"             SERIAL PRIMARY KEY
+);
 
--- CREATE TABLE "Users" (
---   "Name"          TEXT NOT NULL,
---   "Email"  TEXT,
---   "Id"             SERIAL PRIMARY KEY,
---   "SongsListId" INT
--- );
+CREATE TABLE "Users" (
+  "Name"          TEXT NOT NULL,
+  "Email"  TEXT,
+  "Id"             SERIAL PRIMARY KEY,
+  "SongsListId" INT
+);
 
-TRUNCATE TABLE "Songs" RESTART IDENTITY;
+TRUNCATE TABLE "Songs","SongsList","Users" RESTART IDENTITY;
 
 Insert Into "Songs" ("Title", "Artist")
 Values ('Cant Help Falling','Elvis Presley');

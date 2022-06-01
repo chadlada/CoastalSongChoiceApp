@@ -27,12 +27,16 @@ export function SongsLanding() {
     })
   }
 
-  async function _clickSubmit(event) {
+  async function _clickSubmit(event: { preventDefault: () => void }) {
     event.preventDefault()
     inputChecked()
     location.href = '/SongsList'
     console.log('Hey There')
     //  Code to POST new user songlist to API
+  }
+
+  async function searchSubmit(event: { preventDefault: () => void }) {
+    event?.preventDefault()
   }
 
   return (
@@ -54,7 +58,7 @@ export function SongsLanding() {
         {/* <Link to="/SongsList">
         </Link> */}
 
-        <form className="search" onSubmit={_clickSubmit}>
+        <form className="search" onSubmit={searchSubmit}>
           <input
             className="searchbar"
             type="text"

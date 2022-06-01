@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CoastalSongChoiceApp.Models;
 using CoastalSongChoiceApp.Utils;
+using System.Linq;
 
 namespace CoastalSongChoiceApp
 {
@@ -12,6 +13,8 @@ namespace CoastalSongChoiceApp
     {
         public static async Task Main(string[] args)
         {
+          
+
             var host = Utilities.CreateWebHostBuilder(args).Build();
 
             using (var scope = host.Services.CreateScope())

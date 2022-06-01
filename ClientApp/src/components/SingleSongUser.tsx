@@ -4,6 +4,7 @@ import { SongType } from '../types'
 // **This is for my SongList.. Should return a filtered list of the checked songs that the user chose**
 
 export function SingleSongFromListUser(props: SingleSongFromListUserProps) {
+  console.log(props)
   return (
     <label>
       {props.song.title} <br />
