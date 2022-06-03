@@ -2,11 +2,14 @@ import React, { useState } from 'react'
 import { useQuery } from 'react-query'
 import { SongType } from '../types'
 import { SingleSongFromList } from '../components/SingleSongFromList'
-// import { Link } from 'react-router-dom'
+import axios from 'axios'
+import { useNavigate } from 'react-router'
 
 export function SongsLanding() {
+  const navigate = useNavigate()
   const [filterText, setFilterText] = useState('')
-
+  const [songIds, setSongIds] = useState<Number[]>([])
+  // state for songList???
   const { data: songs = [] } = useQuery<SongType[]>(
     ['songs', filterText],
     async function () {
@@ -22,17 +25,40 @@ export function SongsLanding() {
   )
 
   function inputChecked() {
-    document.querySelectorAll('input:checked').forEach((element) => {
+    const newSongIds = Array.from(
+      document.querySelectorAll<HTMLInputElement>('input:checked')
+    ).map((element: HTMLInputElement) => {
       console.log(element)
+      return Number(element.value)
     })
+    setSongIds(newSongIds)
+  }
+
+  async function postSongIds() {
+    const body = {
+      id: 0,
+      userId: 0,
+      songId: 0,
+      song: null,
+      user: null,
+      songs: null,
+    }
+
+    const response = await axios.post(
+      'http://localhost:5000/api/SongList',
+      body
+    )
+    if (response.status === 200) {
+      setSongIds(response.data)
+    }
   }
 
   async function _clickSubmit(event: { preventDefault: () => void }) {
     event.preventDefault()
     inputChecked()
-    location.href = '/SongsList'
-    console.log('Hey There')
-    //  Code to POST new user songlist to API
+    //  Code (function) to POST new user songlist (songIds) to API
+    postSongIds()
+    navigate('/SongsList')
   }
 
   async function searchSubmit(event: { preventDefault: () => void }) {
@@ -54,9 +80,6 @@ export function SongsLanding() {
 
       <div className="checkbox">
         <span className="checkheader"> Songs </span>
-        {/* <div className="leftside"> */}
-        {/* <Link to="/SongsList">
-        </Link> */}
 
         <form className="search" onSubmit={searchSubmit}>
           <input

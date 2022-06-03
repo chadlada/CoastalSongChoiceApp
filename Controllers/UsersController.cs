@@ -47,18 +47,7 @@ namespace CoastalSongChoiceApp.Controllers
             return CreatedAtAction("GetUser", new { id = user.Id }, user);
         }
 
-
-
         }
 
-      
-        // DELETE: api/Users/5
-        //
-        // Deletes an individual user with the requested id. The id is specified in the URL
-        // In the sample URL above it is the `5`. The "{id} in the [HttpDelete("{id}")] is what tells dotnet
-        // to grab the id from the URL. It is then made available to us as the `id` argument to the method.
-        //
-
-
     }
-}
+
