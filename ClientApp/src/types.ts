@@ -11,3 +11,16 @@ export type SongListType = {
   title: string
   artist: string
 }
+
+export type NewUserType = {
+  fullName: string
+  email: string
+  password: string
+}
+export type APIError = {
+  errors: Record<string, string[]>
+  status: number
+  title: string
+  traceId: string
+  type: string
+}
