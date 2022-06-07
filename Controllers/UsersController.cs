@@ -36,18 +36,29 @@ namespace CoastalSongChoiceApp.Controllers
         // new values for the record.
         //
         [HttpPost]
-        public async Task<ActionResult<User>> PostUser(User user)
+public async Task<ActionResult<User>> PostUser(User user)
+{
+    try
+    {
+        // Indicate to the database context we want to add this new record
+        _context.Users.Add(user);
+        await _context.SaveChangesAsync();
+        // Return a response that indicates the object was created (status code `201`) and some additional
+        // headers with details of the newly created object.
+        return CreatedAtAction("GetUser", new { id = user.Id }, user);
+    }
+    catch (Microsoft.EntityFrameworkCore.DbUpdateException)
+    {
+        // Make a custom error response
+        var response = new
         {
-            // Indicate to the database context we want to add this new record
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
-
-            // Return a response that indicates the object was created (status code `201`) and some additional
-            // headers with details of the newly created object.
-            return CreatedAtAction("GetUser", new { id = user.Id }, user);
+            status = 400,
+            errors = new List<string>() { "This account already exists!" }
+        };
+        // Return our error with the custom response
+        return BadRequest(response);
+    }
+}
         }
-
-        }
-
     }
 

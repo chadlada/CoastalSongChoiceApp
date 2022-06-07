@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CoastalSongChoiceApp.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20220601001021_CreateSongsSongListUsers")]
+    [Migration("20220607223507_CreateSongsSongListUsers")]
     partial class CreateSongsSongListUsers
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -85,6 +85,9 @@ namespace CoastalSongChoiceApp.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Email")
+                        .IsUnique();
 
                     b.ToTable("Users");
                 });

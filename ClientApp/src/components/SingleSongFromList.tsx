@@ -6,7 +6,7 @@ import { SongType } from '../types'
 export function SingleSongFromList(props: SingleSongFromListProps) {
   return (
     <label>
-      <input type="checkbox" value={props.song.id} />
+      <input type="checkbox" value={props.song.id} className="single-song" />
       {props.song.title} <br />
       &nbsp;&nbsp;&nbsp;&nbsp;{' '}
       <span>
