@@ -57,47 +57,56 @@ export function SignUp() {
           <a href="/">
             <i className="fa fa-home"></i>
           </a>
-          <h2>Sign Up</h2>
         </nav>
 
-        <form
-          onSubmit={function (event) {
-            event.preventDefault()
-            createUserMutation.mutate(newUser)
-          }}
-        >
-          {errorMessage ? <p className="form-error">{errorMessage}</p> : null}
-          <p className="form-input">
-            <label htmlFor="name">Name</label>
-            <input
-              type="text"
-              name="fullName"
-              value={newUser.fullName}
-              onChange={handleStringFieldChange}
-            />
-          </p>
-          <p className="form-input">
-            <label htmlFor="name">Email</label>
-            <input
-              type="email"
-              name="email"
-              value={newUser.email}
-              onChange={handleStringFieldChange}
-            />
-          </p>
-          <p className="form-input">
-            <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              name="password"
-              value={newUser.password}
-              onChange={handleStringFieldChange}
-            />
-          </p>
-          <p>
-            <input type="submit" value="Submit" />
-          </p>
-        </form>
+        <div className="sign-up-form">
+          <h2>Sign Up</h2>
+          <form
+            onSubmit={function (event) {
+              event.preventDefault()
+              createUserMutation.mutate(newUser)
+            }}
+          >
+            {errorMessage ? <p className="form-error">{errorMessage}</p> : null}
+            <p className="form-input">
+              <label htmlFor="name">Name:</label>
+              <input
+                className="input-box"
+                type="text"
+                name="fullName"
+                value={newUser.fullName}
+                onChange={handleStringFieldChange}
+              />
+            </p>
+            <p className="form-input">
+              <label htmlFor="name">Email:</label>
+              <input
+                className="input-box"
+                type="email"
+                name="email"
+                value={newUser.email}
+                onChange={handleStringFieldChange}
+              />
+            </p>
+            <p className="form-input">
+              <label htmlFor="password">Password:</label>
+              <input
+                className="input-box-password"
+                type="password"
+                name="password"
+                value={newUser.password}
+                onChange={handleStringFieldChange}
+              />
+            </p>
+            <p className="input-submit">
+              <input
+                className="submit-button-signup"
+                type="submit"
+                value="Submit"
+              />
+            </p>
+          </form>
+        </div>
       </main>
     </>
   )

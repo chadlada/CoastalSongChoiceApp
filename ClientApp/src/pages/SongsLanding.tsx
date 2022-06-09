@@ -4,8 +4,10 @@ import { SongType } from '../types'
 import { SingleSongFromList } from '../components/SingleSongFromList'
 import axios from 'axios'
 import { useNavigate } from 'react-router'
+import { getUser, isLoggedIn } from '../auth'
 
 export function SongsLanding() {
+  const user = getUser()
   const navigate = useNavigate()
   const [filterText, setFilterText] = useState('')
   const [songIds, setSongIds] = useState<Number[]>([])
@@ -69,9 +71,9 @@ export function SongsLanding() {
     <>
       <br />
       <br />
-
       <p className="instructions-p">
-        Check the songs you would like to request then click submit!
+        {isLoggedIn() ? <i>Welcome {user.fullName}!</i> : null}
+        <br /> Check the songs you would like to request then click submit!
       </p>
 
       <button className="submitsongs" onClick={_clickSubmit}>
@@ -103,7 +105,6 @@ export function SongsLanding() {
           })}
         </form>
       </div>
-      {/* </div> */}
     </>
   )
 }
