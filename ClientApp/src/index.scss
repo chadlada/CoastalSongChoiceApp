@@ -181,6 +181,7 @@ h1 {
   display: flex;
   flex-direction: column;
   margin-left: 26rem;
+  text-align: center;
 }
 
 .submit-par {
@@ -386,6 +387,15 @@ div.checkboxsongslist {
 // @MEDIA (responsive)
 
 @media all and (max-width: 494px) {
+  body {
+    margin: 0;
+    min-height: 100%;
+    background-image: url('./images/coastaljtree.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    // width: 200px;
+    height: 100vh;
+  }
   a h3 {
     padding-top: 0px;
     margin-left: 8px;
@@ -460,211 +470,202 @@ div.checkboxsongslist {
     line-height: 1rem;
     text-align: center;
   }
-}
 
-.submitlink {
-  background-color: red;
-}
+  .submitlink {
+    background-color: red;
+  }
 
-.midofpage {
-  margin-left: 0rem;
-  background-color: #d5562be0;
-  width: 23rem;
-  height: 14rem;
-  padding: 1rem;
-  border: solid;
-  border-radius: 2rem;
-}
-h3 {
-  font-size: 12px;
-  padding-top: 8px;
-}
+  .midofpage {
+    margin-left: 0rem;
+    background-color: #d5562be0;
+    width: 23rem;
+    height: 14rem;
+    padding: 1rem;
+    border: solid;
+    border-radius: 2rem;
+  }
+  h3 {
+    font-size: 12px;
+    padding-top: 8px;
+  }
 
-h1 {
-  font-size: 37px;
-  padding-bottom: 3rem;
-}
-.checkbox {
-  font-size: 16px;
-  width: 17rem;
-  height: 32rem;
-  overflow: scroll;
-  padding-left: 8px;
-  margin-left: 3rem;
-  margin-top: 0rem;
-}
+  h1 {
+    font-size: 37px;
+    padding-bottom: 3rem;
+  }
+  .checkbox {
+    font-size: 16px;
+    width: 17rem;
+    height: 32rem;
+    overflow: scroll;
+    padding-left: 8px;
+    margin-left: 3rem;
+    margin-top: 0rem;
+  }
 
-.checkheader {
-  font-size: 39px;
-  padding-top: 1rem;
-  padding-left: 5rem;
-  border-bottom: solid 1.5px;
-  font-family: 'Amatic SC', cursive;
-}
+  .checkheader {
+    font-size: 39px;
+    padding-top: 1rem;
+    padding-left: 5rem;
+    border-bottom: solid 1.5px;
+    font-family: 'Amatic SC', cursive;
+  }
 
-div.checkboxsongslist {
-  margin-left: 25px;
-  margin-top: 1rem;
-  text-align: left;
-  width: 18rem;
-  height: 28rem;
-  margin-right: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-bottom: 1rem;
-}
+  div.checkboxsongslist {
+    margin-left: 25px;
+    margin-top: 1rem;
+    text-align: left;
+    width: 18rem;
+    height: 28rem;
+    margin-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+  }
 
-input {
-  margin-left: 0rem;
-}
+  input {
+    margin-left: 0rem;
+  }
 
-span {
-  font-size: 12px;
-}
+  span {
+    font-size: 12px;
+  }
 
-label span.checkheader {
-  font-size: 18px;
-  padding-left: 4.8rem;
-}
+  label span.checkheader {
+    font-size: 18px;
+    padding-left: 4.8rem;
+  }
 
-button {
-  background-color: rgb(38, 32, 32);
-  border-radius: 10px;
-  color: #d5562be0;
-  padding: 6px;
-  position: relative;
-  text-decoration: none;
-  text-transform: capitalize;
-  width: 6rem;
-  margin-top: 0.5rem;
-}
+  button {
+    background-color: rgb(38, 32, 32);
+    border-radius: 10px;
+    color: #d5562be0;
+    padding: 6px;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 6rem;
+    margin-top: 0.5rem;
+  }
 
-label {
-  line-height: 1.5rem;
-  // background-color: #d5562be0;
-  padding-left: 2px;
-  margin-top: 0rem;
-}
+  label {
+    line-height: 1.5rem;
+    // background-color: #d5562be0;
+    padding-left: 2px;
+    margin-top: 0rem;
+  }
 
-p {
-  // display: flex;
-  color: #000000e0;
-  background-color: white;
-  width: 15rem;
-  margin-left: 1rem;
-  padding-left: 1.75rem;
-  padding-top: 14px;
-  padding-bottom: 0.5rem;
-  opacity: 0.7;
-  font-size: 12px;
-  height: 2.1rem;
-  margin-top: 0rem;
-}
-body {
-  margin: 0;
-  min-height: 100%;
-  background-image: url('./images/coastaljtree.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  // width: 200px;
-  height: 100vh;
-}
+  p {
+    // display: flex;
+    color: #000000e0;
+    background-color: white;
+    width: 15rem;
+    margin-left: 1rem;
+    padding-left: 1.75rem;
+    padding-top: 14px;
+    padding-bottom: 0.5rem;
+    opacity: 0.7;
+    font-size: 12px;
+    height: 2.1rem;
+    margin-top: 0rem;
+  }
 
-.link {
-  padding-left: 0rem;
-}
+  .link {
+    padding-left: 0rem;
+  }
 
-.git {
-  padding-right: 0rem;
-}
+  .git {
+    padding-right: 0rem;
+  }
 
-.footer {
-  margin-top: 1rem;
-  position: absolute;
-  bottom: -3rem;
-  width: 100%;
-  height: 2.5rem;
-}
+  .footer {
+    margin-top: 1rem;
+    position: absolute;
+    bottom: -3rem;
+    width: 100%;
+    height: 2.5rem;
+  }
 
-.linkimage {
-  width: 30px;
-  height: 30px;
-  padding-left: 3rem;
-}
+  .linkimage {
+    width: 30px;
+    height: 30px;
+    padding-left: 3rem;
+  }
 
-.gitimage {
-  width: 30px;
-  height: 30px;
-  padding-right: 3rem;
-}
+  .gitimage {
+    width: 30px;
+    height: 30px;
+    padding-right: 3rem;
+  }
 
-h2 {
-  font-size: 15px;
-  text-align: center;
-}
+  h2 {
+    font-size: 15px;
+    text-align: center;
+  }
 
-.songslistp {
-  text-align: center;
-  padding-right: 3rem;
-  margin-left: 6px;
-  width: 17rem;
-  height: 4rem;
-  padding-top: 1rem;
-  opacity: 0.9;
-}
+  .songslistp {
+    text-align: center;
+    padding-right: 3rem;
+    margin-left: 6px;
+    width: 17rem;
+    height: 4rem;
+    padding-top: 1rem;
+    opacity: 0.9;
+  }
 
-.textarea {
-  width: 20rem;
-  height: 98px;
-  margin-left: 0rem;
-}
+  .textarea {
+    width: 20rem;
+    height: 98px;
+    margin-left: 0rem;
+  }
 
-// ------------------------------------------------
-// SignUpPage
+  // ------------------------------------------------
+  // SignUpPage
 
-main.page {
-  background-color: #d5562be0;
-  width: 19rem;
-  margin-left: 34px;
-  height: 22rem;
-  padding-top: 15px;
-  margin-top: 3rem;
-  border-radius: 1rem;
-  border: solid black 2px;
-}
+  main.page {
+    background-color: #d5562be0;
+    width: 19rem;
+    margin-left: 34px;
+    height: 22rem;
+    padding-top: 15px;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    border: solid black 2px;
+  }
 
-p.form-input {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius: 10px;
-}
+  p.form-input {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10px;
+  }
 
-.input-box {
-  width: 9rem;
-  margin-left: 2rem;
-}
+  .input-box {
+    width: 9rem;
+    margin-left: 2rem;
+  }
 
-.input-box-password {
-  margin-left: 10px;
-  width: 9rem;
-}
+  .input-box-password {
+    margin-left: 10px;
+    width: 9rem;
+  }
 
-.input-submit {
-  background-color: transparent;
-  opacity: 1;
-}
+  .input-submit {
+    background-color: transparent;
+    opacity: 1;
+  }
 
-.submit-button-signup {
-  background-color: rgb(38, 32, 32);
-  border-radius: 10px;
-  color: #d5562be0;
-  padding: 1em 1.5em;
-  position: relative;
-  text-decoration: none;
-  text-transform: capitalize;
-  margin-left: 3rem;
-  height: 3rem;
-  margin-top: 0.5rem;
-  width: 8rem;
-  margin-bottom: 1rem;
+  .submit-button-signup {
+    background-color: rgb(38, 32, 32);
+    border-radius: 10px;
+    color: #d5562be0;
+    padding: 1em 1.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-left: 3rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    width: 8rem;
+    margin-bottom: 1rem;
+  }
 }

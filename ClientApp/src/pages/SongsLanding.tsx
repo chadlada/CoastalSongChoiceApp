@@ -33,6 +33,7 @@ export function SongsLanding() {
       console.log(element)
       return Number(element.value)
     })
+    console.log(newSongIds)
     setSongIds(newSongIds)
   }
 
